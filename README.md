@@ -1,7 +1,7 @@
 # 360 Days Calendar: A Precise and Consistent Timekeeping System
-<![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
-<![GitHub stars](https://img.shields.io/github/stars/dyablohunter/360dayscalendar.svg)
-<![GitHub forks](https://img.shields.io/github/forks/dyablohunter/360dayscalendar.svg)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub stars](https://img.shields.io/github/stars/dyablohunter/360dayscalendar.svg)
+![GitHub forks](https://img.shields.io/github/forks/dyablohunter/360dayscalendar.svg)
 
 Welcome to the [360 Days Calendar](https://360days.org) project! This calendar system offers a modern, precise alternative to the Gregorian calendar. With 360 days divided into 12 months of 30 days each and a slightly longer second (1014.5616 milliseconds), it aligns perfectly with the tropical year, eliminating the need for leap years or periodic corrections.
 
