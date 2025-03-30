@@ -4,11 +4,6 @@ const port = 3007;
 
 app.use(express.static("public_html"));
 
-// Helper function to check leap year (still used for Gregorian conversions)
-function isLeapYear(year) {
-  return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
-}
-
 // API route to show today's dates in both calendars
 app.get("/today", (req, res) => {
   const now = new Date();
