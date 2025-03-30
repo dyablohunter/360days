@@ -54,7 +54,7 @@ fetch('https://360days.org/convert?date=2025-03-27&toCalendar=calendar360')
 1. Clone the repository: `git clone https://github.com/dyablohunter/360dayscalendar.git`
 2. Install dependencies: `npm install`
 3. Start the server: `node server.js`
-4. Open `http://localhost:3006` in your browser.
+4. Open `http://localhost:3007` in your browser.
 
 ## Contributing
 We welcome contributions! To contribute:
