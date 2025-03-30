@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>360 Days Calendar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Roboto:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Prism.js CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="google_translate_element" style="text-align: center;"></div>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <div class="wrapper">
+      <div class="calendar-container">
+        <div>
+          <h2 style="color: rgb(255, 0, 0)">360 Days Calendar</h2>
+          <div class="calendar calendar-360">
+            <div class="nav">
+              <span class="reload"><img src="reload.svg" /></span>
+              <button id="prev-360"><img class="arrow arrow-left" src="/arrow.svg" /></button>
+              <div id="title-360">360 Days Calendar</div>
+              <button id="next-360"><img class="arrow arrow-right" src="/arrow.svg" /></button>
+            </div>
+            <div id="calendar-360"></div>
+          </div>
+        </div>
+        <div class="op60">
+          <h2>Regular Calendar</h2>
+          <div class="calendar gregorian">
+            <div class="nav">
+              <button id="greg-prev"><img class="arrow arrow-left" src="/arrow.svg" /></button>
+              <div id="greg-title">Gregorian Calendar</div>
+              <button id="greg-next"><img class="arrow arrow-right" src="/arrow.svg" /></button>
+              <span class="reload"><img src="reload.svg" /></span>
+            </div>
+            <div id="gregorian-calendar"></div>
+          </div>
+        </div>
+      </div>
+
+      <content>
+        <div class="hero">
+          <h1>The 360 Days Calendar</h1>
+          <br />
+          <b>( FREE OPEN SOURCE API )</b>
+          <p>
+            Experience the most precise and consistent way to track time with the <b>360 days calendar</b>!
+          </p>
+        </div>
+
+        <section class="intro">
+          <h2>Why Switch to 360 Days?</h2>
+          <p>
+            The 360 days calendar redefines timekeeping by aligning perfectly with the tropical year. With 360 days divided into 12 months of 30 days each, and a slightly longer second (1014.56 milliseconds instead of 1000), this system eliminates the need for leap years or periodic corrections, offering unmatched simplicity and precision.
+          </p>
+        </section>
+
+        <section class="benefits">
+          <h2>Benefits of the 360 Days Calendar</h2>
+          <ul>
+            <li>
+              <h3>Unmatched Precision</h3>
+              <p>
+                By adjusting the second to 1014.56 milliseconds, the calendar matches the tropical year exactly, with no need for adjustments like leap days.
+              </p>
+            </li>
+            <li>
+              <h3>Perfect Consistency</h3>
+              <p>
+                Every month has exactly 30 days, making planning and scheduling straightforward and predictable.
+              </p>
+            </li>
+            <li>
+              <h3>Simplified Structure</h3>
+              <p>
+                12 months of 30 days each total 360 days per year, providing a balanced and uniform calendar system.
+              </p>
+            </li>
+            <li>
+              <h3>Future-Proof Design</h3>
+              <p>
+                This calendar never drifts, ensuring it remains accurate for centuries without manual corrections.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="join-us">
+          <h2>Join the Time Revolution</h2>
+          <p>
+            Ready to embrace a smarter way to measure time? The 360 days calendar offers a modern, precise alternative to the Gregorian system. Let’s make timekeeping simple and exact—join us at 360days.org!
+          </p>
+          <br />
+          <h2>Learn More:</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/P0SliWBu304?si=c1qxMVDFrE7nVXGz"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <br />
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/rTJ5g4S_U5E?si=zBOoXU5V2raO48rF"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section class="testimonials">
+          <h2>Fun Facts & Testimonials</h2>
+          <div class="testimonial-grid">
+            <blockquote>
+              <p>“No more leap year confusion—just 360 perfect days!”</p>
+              <cite>- Alex, Time Enthusiast</cite>
+            </blockquote>
+            <blockquote>
+              <p>“My planner loves the 30-day months. So do I!”</p>
+              <cite>- Maria, Organized Forever</cite>
+            </blockquote>
+            <blockquote>
+              <p>“The longer second? Didn’t notice, but I love the precision!”</p>
+              <cite>- Sam, Casual Convert</cite>
+            </blockquote>
+            <blockquote>
+              <p>“Finally, a calendar that doesn’t fight the stars!”</p>
+              <cite>- Luna, Astrology Fan</cite>
+            </blockquote>
+          </div>
+        </section>
+      </content>
+
+      <div class="code-examples" id="today-examples">
+        <h2>
+          API code examples for route
+          <a href="https://360days.org/today" target="_blank">/today</a>
+        </h2>
+        <b>Preview in browser:</b>
+        <a href="https://360days.org/today" target="_blank">https://360days.org/today</a><br /><br />
+        <div class="tabs">
+          <button class="tab-button active" data-tab="js-today">JavaScript</button>
+          <button class="tab-button" data-tab="python-today">Python</button>
+          <button class="tab-button" data-tab="java-today">Java</button>
+          <button class="tab-button" data-tab="csharp-today">C#</button>
+          <button class="tab-button" data-tab="ruby-today">Ruby</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="js-today">
+            <pre><code class="language-javascript">
+fetch('https://360days.org/today')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="python-today">
+            <pre><code class="language-python">
+import requests
+
+try:
+    response = requests.get('https://360days.org/today')
+    data = response.json()
+    print(data)
+except Exception as e:
+    print(f"Error: {e}")
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="java-today">
+            <pre><code class="language-java">
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL("https://360days.org/today");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+            Scanner scanner = new Scanner(conn.getInputStream());
+            StringBuilder response = new StringBuilder();
+            while (scanner.hasNext()) {
+                response.append(scanner.nextLine());
+            }
+            scanner.close();
+            System.out.println(response.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="csharp-today">
+            <pre><code class="language-csharp">
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program {
+    static async Task Main() {
+        using (var client = new HttpClient()) {
+            try {
+                var response = await client.GetStringAsync("https://360days.org/today");
+                Console.WriteLine(response);
+            } catch (Exception ex) {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+    }
+}
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="ruby-today">
+            <pre><code class="language-ruby">
+require 'net/http'
+require 'json'
+
+begin
+  uri = URI('https://360days.org/today')
+  response = Net::HTTP.get(uri)
+  data = JSON.parse(response)
+  puts data
+rescue StandardError => e
+  puts "Error: #{e.message}"
+end
+            </code></pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="code-examples" id="convert-examples">
+        <h2>
+          API code examples for route
+          <a href="https://360days.org/convert?date=2025-03-27&toCalendar=calendar360" target="_blank">/convert</a>
+        </h2>
+        <b>Preview in browser:</b><br />
+        <a href="https://360days.org/convert?date=2025-03-27&toCalendar=calendar360" target="_blank"
+          >https://360days.org/convert?date=2025-03-27&toCalendar=calendar360</a
+        ><br />
+        <a href="https://360days.org/convert?date=2025-03-27&toCalendar=gregorian" target="_blank"
+          >https://360days.org/convert?date=2025-03-27&toCalendar=gregorian</a
+        ><br /><br />
+        <div class="tabs">
+          <button class="tab-button active" data-tab="js-calculate">JavaScript</button>
+          <button class="tab-button" data-tab="python-calculate">Python</button>
+          <button class="tab-button" data-tab="java-calculate">Java</button>
+          <button class="tab-button" data-tab="csharp-calculate">C#</button>
+          <button class="tab-button" data-tab="ruby-calculate">Ruby</button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="js-calculate">
+            <pre><code class="language-javascript">
+fetch('https://360days.org/convert?date=2025-03-27&toCalendar=calendar360')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="python-calculate">
+            <pre><code class="language-python">
+import requests
+
+try:
+    response = requests.get('https://360days.org/convert?date=2025-03-27&toCalendar=calendar360')
+    data = response.json()
+    print(data)
+except Exception as e:
+    print(f"Error: {e}")
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="java-calculate">
+            <pre><code class="language-java">
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        try {
+            URL url = new URL("https://360days.org/convert?date=2025-03-27&toCalendar=calendar360");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+            Scanner scanner = new Scanner(conn.getInputStream());
+            StringBuilder response = new StringBuilder();
+            while (scanner.hasNext()) {
+                response.append(scanner.nextLine());
+            }
+            scanner.close();
+            System.out.println(response.toString());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="csharp-calculate">
+            <pre><code class="language-csharp">
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+
+class Program {
+    static async Task Main() {
+        using (var client = new HttpClient()) {
+            try {
+                var response = await client.GetStringAsync("https://360days.org/convert?date=2025-03-27&toCalendar=calendar360");
+                Console.WriteLine(response);
+            } catch (Exception ex) {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+    }
+}
+            </code></pre>
+          </div>
+          <div class="tab-pane" id="ruby-calculate">
+            <pre><code class="language-ruby">
+require 'net/http'
+require 'json'
+
+begin
+  uri = URI('https://360days.org/convert?date=2025-03-27&toCalendar=calendar360')
+  response = Net::HTTP.get(uri)
+  data = JSON.parse(response)
+  puts data
+rescue StandardError => e
+  puts "Error: #{e.message}"
+end
+            </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="wrapper">
+      <h2>Stay Connected!</h2>
+      Email me at: <a href="mailto:admin@360days.org" target="_blank">admin@360days.org</a><br /><br />
+      Github: <a href="https://github.com/dyablohunter/360dayscalendar.git" target="_blank">https://github.com/dyablohunter/360dayscalendar.git</a><br /><br />
+    </footer>
+    <script src="script.js"></script>
+    <!-- Prism.js JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
