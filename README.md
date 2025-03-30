@@ -3,13 +3,19 @@
 <![GitHub stars](https://img.shields.io/github/stars/dyablohunter/360dayscalendar.svg)
 <![GitHub forks](https://img.shields.io/github/forks/dyablohunter/360dayscalendar.svg)
 
-Welcome to the [360 Days Calendar](https://360days.org) project! This calendar system offers a modern, precise alternative to the Gregorian calendar. With 360 days divided into 12 months of 30 days each and a slightly longer second (1014.56 milliseconds), it aligns perfectly with the tropical year, eliminating the need for leap years or periodic corrections.
+Welcome to the [360 Days Calendar](https://360days.org) project! This calendar system offers a modern, precise alternative to the Gregorian calendar. With 360 days divided into 12 months of 30 days each and a slightly longer second (1014.5616 milliseconds), it aligns perfectly with the tropical year, eliminating the need for leap years or periodic corrections.
 
 ## About
 The 360 Days Calendar redefines timekeeping by:
 * Using 12 months of exactly 30 days each, totaling 360 days per year.
-* Redefining the second to 1014.56 milliseconds to match the tropical year precisely.
+* Redefining the second to 1014.5616 milliseconds to match the tropical year precisely.
 * Eliminating the need for leap days or other adjustments, ensuring long-term accuracy.
+
+## How did the idea came about?
+I was trying to find the answer to this question:
+**If a tropical year has X miliseconds and I want to define a calendar of 360 days with 12 months of 30 days each, of 24H each, of 60 min each, of 60s each, how many milliseconds would a second have to have for the tropical year to match this calendar without ever needing a correction or leap year like the gregorian calendar? Basically a precise calendar that might not need corrections for centuries?**
+
+
 
 ## Features
 * **Unmatched Precision**: Perfect alignment with the tropical year.

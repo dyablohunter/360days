@@ -12,8 +12,8 @@ app.get("/today", (req, res) => {
 
   // Calculate 360 days calendar date
   // Tropical year ~ 365.2422 days * 24 * 60 * 60 * 1000 ms = 31,556,925,888 ms
-  // 360 days calendar year = 360 days * 24 * 60 * 60 * 1014.56 ms = 31,556,925,888 ms
-  const msPer360Day = 24 * 60 * 60 * 1014.56; // Milliseconds in a 360-day calendar day
+  // 360 days calendar year = 360 days * 24 * 60 * 60 * 1014.5616 ms = 31,556,925,888 ms
+  const msPer360Day = 24 * 60 * 60 * 1014.5616; // Milliseconds in a 360-day calendar day
   const daysSinceEpoch = Math.floor(unixTime / msPer360Day); // Days since 1970-01-01 in 360 calendar
   const year360 = Math.floor(daysSinceEpoch / 360) + 1970;
   const dayOfYear360 = daysSinceEpoch % 360; // 0 to 359
@@ -58,7 +58,7 @@ app.get("/convert", (req, res) => {
     });
   }
 
-  const msPer360Day = 24 * 60 * 60 * 1014.56; // Milliseconds per 360 calendar day
+  const msPer360Day = 24 * 60 * 60 * 1014.5616; // Milliseconds per 360 calendar day
   const msPerGregDay = 24 * 60 * 60 * 1000; // Milliseconds per Gregorian day
 
   if (toCalendar === "calendar360") {
@@ -67,7 +67,7 @@ app.get("/convert", (req, res) => {
     const startOfYear = new Date(year, 0, 1).getTime();
     const msSinceYearStart = inputDate.getTime() - startOfYear;
     const daysSinceYearStart = msSinceYearStart / msPerGregDay;
-    const total360Days = Math.floor((year - 1970) * 365.2422 * (1000 / 1014.56)) + daysSinceYearStart * (1000 / 1014.56);
+    const total360Days = Math.floor((year - 1970) * 365.2422 * (1000 / 1014.5616)) + daysSinceYearStart * (1000 / 1014.5616);
     const year360 = Math.floor(total360Days / 360) + 1970;
     const dayOfYear360 = total360Days % 360;
     const month360 = Math.floor(dayOfYear360 / 30) + 1;
