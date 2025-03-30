@@ -59,4 +59,4 @@ We welcome contributions! To contribute:
 This project is licensed under the MIT License.
 
 ## Contact
-Email: [admin@360days](mailto:admin@360days.org)
+Email: [admin@360days.org](mailto:admin@360days.org)
